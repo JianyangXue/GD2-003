@@ -31,7 +31,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1 {
 	font-size: 50px;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 0.05em;
 }
 
@@ -100,11 +100,223 @@ a:visited {
 .home {
 	height: 100vh;
 	min-height: 568px;
-	max-height: 900px;
+	max-height: 950px;
 	background: linear-gradient( rgba(19, 19, 22, 0.5), rgba(19, 19, 22, 0.5)), url('bg.jpg');
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	animation: main-img-hide 2s infinite step-end;
+}
+
+.home::before,
+.home::after {
+    background-position: absolute;
+    width: 1050px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: inherit;
+}
+
+.home::after {
+    content: "";
+    animation: glitch-one 20s infinite step-end;
+}
+
+.home::before {
+    content: "";
+    animation: glitch-two 20s infinite 1s step-end;
+}
+@keyframes glitch-one {
+	
+    15.5% {
+        clip-path: inset(10px 0 320px);
+        left: -20px;
+    }
+    16% {
+        clip-path: inset(10px 0 320px);
+        left: -10px;
+        opacity: 0;
+    }
+    45% {
+        opacity: 0.5;
+        left: -20px;
+        filter: hue-rotate(90deg) saturate(1.3);
+    }
+    45.5% {
+        left: 0px;
+        filter: invert(1);
+    }
+
+    46% {
+        clip-path: inset(150px 0 160px);
+        left: 15%;
+    }
+    46.5% {
+        clip-path: inset(20px 0 200px);
+        left: -10%;
+        transform: scale(1.1);
+    }
+    47% {
+        clip-path: inset(240px 0 20px);
+        left: -11%;
+        transform: scale(1.2);
+    }
+    47.5% {
+        clip-path: inset(20 0 20px);
+        left: 13%;
+        transform: scale(1.3);
+        filter: invert(0);
+    }
+    48% {
+        clip-path: inset(120 0 120px);
+        left: 15%;
+        transform: scale(1.1);
+    }
+    48.5% {
+        clip-path: inset(260px 0 10px);
+        left: -11%;
+        transform: scale(1.2);
+        filter: none;
+    }
+    49% {
+        clip-path: inset(5px 0 350px);
+        left: 11%;
+        transform: scale(1.3);
+    }
+    49.5% {
+        clip-path: inset(105px 0 210px);
+        left: 0%;
+        transform: scale(1.1);
+    }
+    50% {
+        clip-path: inset(175px 0 160px);
+        left: -11%;
+    }
+    50.5% {
+        clip-path: inset(95px 0 230px);
+        left: -14%;
+        transform: scale(1.2);
+    }
+    51% {
+        clip-path: inset(235px 0 12px);
+        left: -14%;
+    }
+    51.5% {
+        clip-path: inset(350px 0 7px);
+        left: -14%;
+    }
+    52% {
+        clip-path: inset(320px 0 27px);
+        left: -12%;
+        transform: scale(1.1);
+    }
+    52.5% {
+        clip-path: inset(190px 0 127px);
+        left: -11%;
+        transform: scale(1.3);
+        filter: hue-rotate(90deg) saturate(1.3);
+    }
+    54% {
+        clip-path: inset(20px 0 20px);
+        left: 12%;
+        transform: scale(1.1);
+        filter: none;
+    }
+    54% {
+        background-image: none;
+    }
+}
+
+
+@keyframes glitch-two {
+
+    25.5% {
+        clip-path: inset(10px 0 320px);
+        left: -20px;
+    }
+    
+    45% {
+        opacity: 0.3;
+        left: -20px;
+        filter: hue-rotate(45deg) saturate(1.1);
+    }
+    45.5% {
+        left: 0px;
+        filter: invert(1.2);
+    }
+
+    46% {
+        clip-path: inset(50px 0 260px);
+        left: -12%;
+    }
+    46.5% {
+        clip-path: inset(120px 0 100px);
+        left: 8%;
+        transform: scale(1.2);
+    }
+    
+    47.5% {
+        clip-path: inset(220 0 70px);
+        left: -9%;
+        transform: scale(1.1);
+        filter: invert(1.1);
+    }
+    
+    48.5% {
+        clip-path: inset(0px 0 310px);
+        left: -12%;
+        transform: scale(1.2);
+        filter: none;
+    }
+    
+    49.5% {
+        clip-path: inset(10px 0 240px);
+        left: 6%;
+        transform: scale(1.1);
+    }
+    
+    50.5% {
+        clip-path: inset(195px 0 90px);
+        left: 14%;
+        transform: scale(1.4);
+    }
+    
+    51.5% {
+        clip-path: inset(350px 0 7px);
+        left: 14%;
+    }
+    
+    52.5% {
+        clip-path: inset(90px 0 227px);
+        left: -11%;
+        transform: scale(1.3);
+        filter: hue-rotate(150deg) saturate(1.3);
+    }
+    
+    
+}
+@keyframes main-img-hide {
+
+   
+
+
+    56% {
+        background-image: url(bg.jpg)
+        opacity 0.5;
+    }
+    56.5% {
+        background-image: url(bg.jpg)
+    }
+    57% {
+        background-image: url(bg.jpg)
+        
+    }
+
 }
 
 .home .logo {
