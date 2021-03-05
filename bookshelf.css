@@ -1,0 +1,174 @@
+#heading{
+    margin: auto;
+    text-align: left;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -150px;
+}
+
+#A{margin: 10%;
+    text-align: left;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -190px;
+}
+
+#L{margin: 13%;
+    text-align: left;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -230px;
+}
+
+#E{margin: 16%;
+    text-align: left;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -270px;
+}
+
+#X{margin: 19%;
+    text-align: left;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -310px;
+}
+
+#T{margin: 22%;
+    text-align: left;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -350px;
+}
+
+#B{margin: 25%;
+    text-align: left;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -390px;
+}
+
+#H{margin: 28%;
+    text-align: left;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: -430px;
+}
+
+#heading2{
+    margin: 31%;
+    text-align: center;
+    font-size: 250%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-bottom: -30px;
+}
+
+#heading3{
+    margin: auto;
+    text-align: center;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+#p1{
+    margin: 10%;
+    text-align: right;
+    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: -40px;
+}
+
+#p2{
+    margin: 5%;
+    text-align: left;
+    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: -750px;
+}
+
+#p3{
+    writing-mode: vertical-rl;
+    text-orientation: upleft;
+    margin: 65%;
+    text-align: left;
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: -1000px;
+}
+
+#p4{
+    margin: 25%;
+    text-align: left;
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: -400px;
+}
+
+#p5{
+    margin: 35%;
+    text-align: left;
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.name {
+	font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	display: block;
+	margin: 0;
+	color: #A4EBF3;
+	text-decoration: none;
+}
+
+.portfolio-item {
+	position: relative;
+	margin-top: 30px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.portfolio-item:hover .overlay {
+	top: 0;
+}
+
+.portfolio-item > img {
+	width: 60%;
+}
+
+.portfolio-item > .overlay {
+	position: absolute;
+	width: 60%;
+	height: 46%;
+	top: 100%;
+	left: 50;
+	background: rgba(145, 166, 255, 0.81);
+	-webkit-transition: top 0.3s ease-in-out;
+	-moz-transition: top 0.3s ease-in-out;
+	-ms-transition: top 0.3s ease-in-out;
+	-o-transition: top 0.3s ease-in-out;
+	transition: top 0.3s ease-in-out;
+}
+
+.portfolio-item .content {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
