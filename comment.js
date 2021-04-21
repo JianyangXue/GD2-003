@@ -54,7 +54,7 @@ var Storage = {
 			
 				"</span><p><span class=\"msg\">" + data[0] +
 				"<input style=\"float:right;border:none;border-radius:5px;\" id=\"clearBt\" type=\"button\" onclick=\"delete1(" +
-				localStorage.key(i) + ");\" value=\"删除\"/>" + "</span></p>";
+				localStorage.key(i) + ");\" value=\"delete\"/>" + "</span></p>";
 		}
 		document.getElementById("comment").innerHTML = dataHtml;
 	},

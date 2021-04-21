@@ -126,7 +126,7 @@ body {
 	width: 60%;
 	height: 100%;
 	top: 100%;
-	left: 50;
+	
 	background: rgba(145, 166, 255, 0.81);
 	-webkit-transition: top 0.3s ease-in-out;
 	-moz-transition: top 0.3s ease-in-out;
@@ -152,4 +152,8 @@ body {
 #p5, #p6, #p7, #p8{
 	font-size: 2rem;
 	color: white;
+	
+	
+    margin-top: 50px;
+
 }
