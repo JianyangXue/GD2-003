@@ -157,8 +157,13 @@ body {
 	    margin-left: 65%;
 
 }
-#p5, #p6, #p7, #p8{
-	margin-top: 20%;
+#p5{
+	margin-top: 12%;
+	font-size: 2rem;
+	color: white;
+}
+#p6, #p7, #p8{
+  margin-top: 8%;
 	font-size: 2rem;
 	color: white;
 }
