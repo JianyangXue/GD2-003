@@ -7,9 +7,9 @@ function delete1(id) {
 
 function prom() {
 
-	var name = prompt("please enter your name", ""); //将输入的内容赋给变量 name ，
+	var name = prompt("please enter your name", ""); 
 	named = name;
-	if (named) //如果返回的有内容
+	if (named) 
 
 	{
 
@@ -23,18 +23,18 @@ function prom() {
 
 }
 var Storage = {
-	saveData: function() //保存数据
+	saveData: function() 
 	{
 
 		var data = document.querySelector("#post textarea");
 		if (data.value != "") {
-			var time = new Date().getTime() + Math.random() * 5; //getTime是Date对象中的方法，作用是返回 1970年01月01日至今的毫秒数
+			var time = new Date().getTime() + Math.random() * 5; 
 			if (named) {
 				localStorage.setItem(time, data.value + "|" + named + "|" + this
-			.getDateTime()); //将毫秒数存入Key值中，可以降低Key值重复率
+			.getDateTime()); 
 			} else {
 				localStorage.setItem(time, data.value + "|" + "unknow" + "|" + this
-			.getDateTime()); //将毫秒数存入Key值中，可以降低Key值重复率
+			.getDateTime()); 
 			}
 
 			data.value = "";
@@ -43,11 +43,11 @@ var Storage = {
 			alert("please enter your message");
 		}
 	},
-	writeData: function() //输出数据
+	writeData: function() 
 	{
 		var dataHtml = "",
 			data = "";
-		for (var i = localStorage.length - 1; i >= 0; i--) //效率更高的循环方法
+		for (var i = localStorage.length - 1; i >= 0; i--) 
 		{
 			data = localStorage.getItem(localStorage.key(i)).split("|");
 
@@ -58,7 +58,7 @@ var Storage = {
 		}
 		document.getElementById("comment").innerHTML = dataHtml;
 	},
-	clearData: function() //清空数据
+	clearData: function()
 	{
 		if (localStorage.length > 0) {
 			if (window.confirm("After emptying, it cannot be restored. Are you sure to empty?")) {
@@ -69,7 +69,7 @@ var Storage = {
 			alert("There is no need to clear data！");
 		}
 	},
-	getDateTime: function() //获取日期时间
+	getDateTime: function()
 	{
 		var isZero = function(num) {
 			if (num < 10) {
@@ -85,11 +85,11 @@ var Storage = {
 }
 
 window.onload = function() {
-	Storage.writeData(); //当打开页面的时候，先将localStorage中的数据输出一边，如果没有数据，则输出空
+	Storage.writeData();
 	document.getElementById("postBt").onclick = function() {
 		Storage.saveData();
-	} //发表评论按钮添加点击事件，作用是将localStorage中的数据输出
+	} 
 	document.getElementById("clearBt").onclick = function() {
 		Storage.clearData();
-	} //清空所有已保存的数据
+	} 
 }
