@@ -126,12 +126,12 @@ body {
 }
 
 .portfolio-item > img {
-	width: 60%;
+	width: 50%;
 }
 
 .portfolio-item > .overlay {
 	position: absolute;
-	width: 60%;
+	width: 50%;
 	height: 100%;
 	top: 100%;
 	left: 50;
